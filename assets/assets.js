@@ -76,24 +76,28 @@ export const assets = {
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
-    bgImage: "/work-1.png",
+    title: "SportsVision",
+    description: "Web App",
+    bgImage: "/superVision.jpg",
+    link: "https://www.sportsvision.ai/",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
-    bgImage: "/work-2.png",
+    title: "Netflix clone",
+    description: "Web App",
+    bgImage: "/netflix.png",
+    link: "https://netflix-clone-2f7a2.web.app/",
   },
   {
-    title: "Photography site",
-    description: "Web Design",
-    bgImage: "/work-3.png",
+    title: "Finoyou",
+    description: "Android App",
+    bgImage: "/finoyou.png",
+    link: "https://play.google.com/store/apps/details?id=com.finoyou",
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
-    bgImage: "/work-4.png",
+    title: "Airacer",
+    description: "Web App",
+    bgImage: "/airacer.jpg",
+    link: "https://app.avitor.ai/auth/login",
   },
 ];
 
