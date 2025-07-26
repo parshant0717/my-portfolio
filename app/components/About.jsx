@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 function About({ isDarkMode }) {
+  const currentYear = new Date().getFullYear();
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -53,8 +54,8 @@ function About({ isDarkMode }) {
           className="flex-1"
         >
           <p className="mb-10 max-w-2xl font-family-Ovo">
-            Accomplished software developer with 3.5 years of experience in
-            development of web and mobile applications.
+            Accomplished software developer with {currentYear - 2021} years of
+            experience in development of web and mobile applications.
           </p>
           <motion.ul
             initial={{ opacity: 0 }}

@@ -11,8 +11,8 @@ import figma from "./figma.png";
 import git from "./git.png";
 import mongodb from "./mongodb.png";
 import right_arrow_white from "./right-arrow-white.png";
-import logo from "./navlogo.png";
-import logo_dark from "./navlogo_dark.png";
+import logo from "./ADNAAN_White.png";
+import logo_dark from "./ADNAAN_dark.png";
 import mail_icon from "./mail_icon.png";
 import mail_icon_dark from "./mail_icon_dark.png";
 import download_icon from "./download-icon.png";
@@ -34,6 +34,9 @@ import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
+import upstox_pro_icon from "./upstox_pro_icon.png";
+import techholding_logo from "./techholding_logo.ico";
+import mobilecoderz_logo from "./mobilecoderz_logo.png";
 
 export const assets = {
   user_image,
@@ -76,16 +79,16 @@ export const assets = {
 
 export const workData = [
   {
-    title: "SportsVision",
+    title: "Deposyt",
     description: "Web App",
-    bgImage: "/superVision.jpg",
-    link: "https://www.sportsvision.ai/",
+    bgImage: "/deposyt_logo.png",
+    link: "https://www.deposyt.com/",
   },
   {
-    title: "Netflix clone",
-    description: "Web App",
-    bgImage: "/netflix.png",
-    link: "https://netflix-clone-2f7a2.web.app/",
+    title: "Upstox",
+    description: "Android App",
+    bgImage: "/upstox.jpeg",
+    link: "https://play.google.com/store/apps/details?id=in.upstox.app&pcampaignid=web_share",
   },
   {
     title: "Finoyou",
@@ -97,35 +100,86 @@ export const workData = [
     title: "Airacer",
     description: "Web App",
     bgImage: "/airacer.jpg",
-    link: "https://app.avitor.ai/auth/login",
+    link: "https://airacer.com/",
   },
 ];
 
-export const serviceData = [
+export const experianceData = [
   {
-    icon: assets.web_icon,
-    title: "Web design",
-    description: "Web development is the process of building, programming...",
+    companyLogo: upstox_pro_icon,
+    jobTitle: "SDE - II",
+    companyName: "Upstox • Mumbai",
+    workingPeriod: "08/2024 - Present",
+    description: [
+      {
+        title: "Revamped IPO Interface:",
+        subDescription:
+          "Redesigned the Initial Public Offering (IPO) feature using Next.js, ensuring seamless integration into the mobile application for a more intuitive user experienc",
+      },
+      {
+        title: "Fixed Deposit:",
+        subDescription:
+          " Launched the Fixed Deposit a web app using Next.js. Integrated it into the mobile app via web view.",
+      },
+      {
+        title: "Bonds Section Launch:",
+        subDescription:
+          "Successfully launched the Bonds investment section on the web platform using Next.js.",
+      },
+      {
+        title: "Bug Fixes in Mutual Funds:",
+        subDescription:
+          "Identified and resolved various bugs in the mutual funds section of the app, leading to improved functionality and an enhanced user experience.",
+      },
+    ],
     link: "",
   },
   {
-    icon: assets.mobile_icon,
-    title: "Mobile app",
-    description:
-      "Mobile app development involves creating software for mobile devices...",
+    companyLogo: techholding_logo,
+    jobTitle: "Software Engineer",
+    companyName: "Tech Holding • Pune",
+    workingPeriod: "04/2022 - 07/2024",
+    description: [
+      {
+        title: "Developed the TLYNT admin portal:",
+        subDescription:
+          "using React.js for the web interface and React Native for the cross-platform mobile app, successfully launched on both Play Store and App Store",
+      },
+      {
+        title: "Built the Deposy admin panel:",
+        subDescription:
+          "Used React.js and TypeScript, alongside a Next.js storefront; integrated Node.js APIs and PostgreSQL as the backend database for robust data management Link",
+      },
+      {
+        title: "Created the Spotrunner web app:",
+        subDescription:
+          " leveraging AI for behind-the-scenes marketing automation, deployed with a user-friendly interface and external integration Link",
+      },
+    ],
     link: "",
   },
   {
-    icon: assets.ui_icon,
-    title: "UI/UX design",
-    description:
-      "UI/UX design focuses on creating a seamless user experience...",
-    link: "",
-  },
-  {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
+    companyLogo: mobilecoderz_logo,
+    jobTitle: " Software Engineer",
+    companyName: "MobileCoderz • Remote",
+    workingPeriod: " 04/2021 - 03/2022",
+    description: [
+      {
+        title: "Developed the Finku mobile app:",
+        subDescription:
+          "using React Native and TypeScript; launched on both App Store and Google Play. Finku has achieved over 1 million downloads across all platforms. Play Store App Store Play Store",
+      },
+      {
+        title: "Created Tawqui:",
+        subDescription:
+          "an e-signature app for documents built with React Native; published on both Play Store and App Store. App Store",
+      },
+      {
+        title: "Built Airacer:",
+        subDescription:
+          "a web-based jet booking platform developed with Next.js. Personal Project Finoyou.in & Transferx.in Developed Link",
+      },
+    ],
     link: "",
   },
 ];

@@ -4,8 +4,10 @@ import Image from "next/image";
 import React from "react";
 
 function Header() {
+  const currentYear = new Date().getFullYear();
+  console.log(currentYear);
   return (
-    <div className="w-11/12 max-w-3xl text-center mx-auto h-auto flex flex-col items-center justify-center gap-4 pt-20">
+    <div className="w-11/12 max-w-3xl text-center mx-auto h-auto flex flex-col items-center justify-center gap-4 pt-30">
       <motion.div
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
@@ -40,10 +42,10 @@ function Header() {
         transition={{ duration: 0.6, delay: 0.7 }}
         className="max-w-2xl mx-auto font-family-Ovo"
       >
-        Accomplished software developer with 3.5 years of experience in
-        development of web and mobile applications. Excels in every stage of the
-        life cycle of software development, including design creation, coding,
-        debugging, testing, and maintenance.
+        Accomplished software developer with {currentYear - 2021} years of
+        experience in development of web and mobile applications. Excels in
+        every stage of the life cycle of software development, including design
+        creation, coding, debugging, testing, and maintenance.
       </motion.p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <motion.a

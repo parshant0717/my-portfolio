@@ -57,8 +57,8 @@ function Navbar({ isDarkMode, setIsDarkMode }) {
             </a>
           </li>
           <li>
-            <a href="#services" className="font-family-Ovo">
-              Services
+            <a href="#experiance" className="font-family-Ovo">
+              Experiance
             </a>
           </li>
           <li>
