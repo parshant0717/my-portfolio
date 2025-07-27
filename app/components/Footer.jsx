@@ -36,11 +36,6 @@ function Footer({ isDarkMode }) {
               LinkedIn
             </a>
           </li>
-          <li>
-            <a target="_blank" href="#">
-              Twitter
-            </a>
-          </li>
         </ul>
       </div>
     </div>
