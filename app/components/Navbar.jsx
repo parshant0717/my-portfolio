@@ -122,7 +122,11 @@ function Navbar({ isDarkMode, setIsDarkMode }) {
             </a>
           </li>
           <li>
-            <a onClick={closeMenu} href="#services" className="font-family-Ovo">
+            <a
+              onClick={closeMenu}
+              href="#experiance"
+              className="font-family-Ovo"
+            >
               Experiance
             </a>
           </li>
