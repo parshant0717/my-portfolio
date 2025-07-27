@@ -1,9 +1,12 @@
 import { assets, workData } from "@/assets/assets";
 import { motion } from "motion/react";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 function Work({ isDarkMode }) {
+  const [showMore, setShowMore] = useState(false);
+  const addWorkData = showMore ? workData : workData.slice(0, 4);
+  const handleToggle = () => setShowMore((prev) => !prev);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -43,9 +46,9 @@ function Work({ isDarkMode }) {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.9 }}
-        className="grid grid-cols-auto gap-5 my-10 dark:text-black"
+        className="grid grid-cols-auto md:grid-cols-4 gap-5 my-10 dark:text-black"
       >
-        {workData.map((Project, index) => (
+        {addWorkData.map((Project, index) => (
           <a
             href={Project.link}
             target="_blank"
@@ -56,7 +59,7 @@ function Work({ isDarkMode }) {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
               key={index}
-              className="aspect-square bg-no-repeat bg-cover  bg-center rounded-lg relative cursor-pointer group"
+              className="aspect-square bg-no-repeat bg-cover bg-center rounded-4xl relative cursor-pointer group overflow-hidden"
               style={{ backgroundImage: `url(${Project.bgImage})` }}
             >
               <div className="bg-white w-10/12 rounded-md  absolute bottom-5 left-1/2 -translate-x-1/2 duration-500 py-3 px-5  flex items-center justify-between group-hover:bottom-7">
@@ -76,14 +79,14 @@ function Work({ isDarkMode }) {
           </a>
         ))}
       </motion.div>
-      <motion.a
+      <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1.1 }}
-        href=""
-        className="w-max flex items-center justify-center gap-2 text-gray-700 border-[.5px] border-gray-700 rounded-full px-10 py-3 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover"
+        onClick={handleToggle}
+        className="w-max flex items-center justify-center gap-2 text-gray-700 border-[.5px] border-gray-700 transition ease-in-out rounded-full px-10 py-3 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover"
       >
-        Show more{" "}
+        {showMore ? "Show less" : "Show more"}
         <Image
           src={
             isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold
@@ -91,7 +94,7 @@ function Work({ isDarkMode }) {
           alt="right-arrow"
           className="w-4"
         />
-      </motion.a>
+      </motion.p>
     </motion.div>
   );
 }

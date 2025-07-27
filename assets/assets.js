@@ -102,6 +102,36 @@ export const workData = [
     bgImage: "/airacer.jpg",
     link: "https://airacer.com/",
   },
+  {
+    title: "TLYNT",
+    description: "Android App",
+    bgImage: "/TLYNT_logo.png",
+    link: "https://apps.apple.com/us/app/tlynt/id1624639948",
+  },
+  {
+    title: "TLYNT",
+    description: "Web App",
+    bgImage: "/TLYNT_logo.png",
+    link: "http://tlynt.com",
+  },
+  {
+    title: "Spot Runner",
+    description: "Web App",
+    bgImage: "/spot_runner_logo.jpeg",
+    link: "https://www.spotrunner.com/",
+  },
+  {
+    title: "Finku",
+    description: "Android App",
+    bgImage: "/Finku_logo.png",
+    link: "https://apps.apple.com/us/app/finku-atur-keuangan-otomatis/id1587320325?mt=8",
+  },
+  {
+    title: "Tawqi3i",
+    description: "Android App",
+    bgImage: "/Tawqi3i_logo.png",
+    link: "https://apps.apple.com/vn/app/tawqi3i-%D8%AA%D9%88%D9%82%D9%8A%D8%B9%D9%8A/id1567218327",
+  },
 ];
 
 export const experianceData = [

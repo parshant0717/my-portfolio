@@ -76,13 +76,13 @@ function Experiance() {
               </p>
               <p
                 onClick={() => setOpenDialogIndex(index)}
-                className="flex items-center gap-2 text-sm mt-5 cursor-pointer"
+                className="flex items-center gap-2 text-sm mt-5 cursor-pointer group"
               >
                 Read more
                 <Image
                   src={assets.right_arrow}
                   alt="click-me"
-                  className="w-4"
+                  className="w-4 group-hover: translate-y-0.5 duration-300"
                 />
               </p>
             </motion.div>
