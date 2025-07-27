@@ -68,7 +68,7 @@ function Navbar({ isDarkMode, setIsDarkMode }) {
           </li>
           <li>
             <a href="#contact" className="font-family-Ovo">
-              Contact Me{" "}
+              Contact Me
             </a>
           </li>
         </ul>
@@ -77,14 +77,14 @@ function Navbar({ isDarkMode, setIsDarkMode }) {
             <Image
               src={isDarkMode ? assets.sun_icon : assets.moon_icon}
               alt="theme-mode-dark-light"
-              className="w-6"
+              className="w-6 cursor-pointer"
             />
           </button>
           <a
             href="#contact"
             className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-family-Ovo dark:border-white/50"
           >
-            Contact{" "}
+            Contact
             <Image
               src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
               alt="contact-icon"
@@ -123,7 +123,7 @@ function Navbar({ isDarkMode, setIsDarkMode }) {
           </li>
           <li>
             <a onClick={closeMenu} href="#services" className="font-family-Ovo">
-              Services
+              Experiance
             </a>
           </li>
           <li>
@@ -133,7 +133,7 @@ function Navbar({ isDarkMode, setIsDarkMode }) {
           </li>
           <li>
             <a onClick={closeMenu} href="#contact" className="font-family-Ovo">
-              Contact Me{" "}
+              Contact Me
             </a>
           </li>
         </ul>

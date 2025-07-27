@@ -61,10 +61,9 @@ function Contact() {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-family-Ovo"
       >
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
-        aperiam odit minima! Eius, ut magnam repellat non labore neque nostrum
-        aliquid exercitationem aperiam quam dolorem, impedit et, nobis obcaecati
-        laborum?
+        Have a project in mind or just want to say hello? Feel free to reach out
+        — I'm always open to new opportunities, freelance work, or tech
+        discussions.
       </motion.p>
       <motion.form
         initial={{ opacity: 0 }}
@@ -104,13 +103,13 @@ function Contact() {
           placeholder="Enter Your Message"
           name="message"
           required
-          className="w-full p-4 outline-none border-[.5px] border-gray-400 rounded-md bg-white mb-6  dark:bg-darkHover/30 dark:border-white/90"
+          className="w-full p-4 outline-none border-[.5px] border-gray-400 rounded-md bg-white mb-6 text-gray-900 placeholder-gray-500 dark:bg-darkHover/30 dark:border-white/90 dark:text-white dark:placeholder-gray-400"
         ></motion.textarea>
         <motion.button
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
           type="submit"
-          className="py-3 px-8 w-max  flex items-center justify-between gap-2 bg-black/80 text-white  rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[.5px] dark:hover:bg-darkHover"
+          className="py-3 px-8 w-max  flex items-center justify-between gap-2 bg-black/80 text-white cursor-pointer rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[.5px] dark:hover:bg-darkHover"
         >
           Submit Now
           <Image src={assets.right_arrow_white} alt="submit" className="w-4" />

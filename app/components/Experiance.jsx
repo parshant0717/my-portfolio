@@ -36,10 +36,9 @@ function Experiance() {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-family-Ovo"
       >
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
-        aperiam odit minima! Eius, ut magnam repellat non labore neque nostrum
-        aliquid exercitationem aperiam quam dolorem, impedit et, nobis obcaecati
-        laborum?
+        A results-driven engineer with experience in building and scaling web
+        and mobile products across startups and enterprises. I turn complex
+        requirements into clean, maintainable solutions.
       </motion.p>
       <motion.div
         initial={{ opacity: 0 }}

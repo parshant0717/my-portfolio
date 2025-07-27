@@ -1,7 +1,7 @@
 import { assets, workData } from "@/assets/assets";
 import { motion } from "motion/react";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function Work({ isDarkMode }) {
   const [showMore, setShowMore] = useState(false);
@@ -37,10 +37,9 @@ function Work({ isDarkMode }) {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-family-Ovo"
       >
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
-        aperiam odit minima! Eius, ut magnam repellat non labore neque nostrum
-        aliquid exercitationem aperiam quam dolorem, impedit et, nobis obcaecati
-        laborum?
+        Here are some of the most exciting products I've worked on — from
+        finance platforms to AI-based tools — showcasing both frontend precision
+        and backend strength.
       </motion.p>
       <motion.div
         initial={{ opacity: 0 }}
@@ -84,7 +83,7 @@ function Work({ isDarkMode }) {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1.1 }}
         onClick={handleToggle}
-        className="w-max flex items-center justify-center gap-2 text-gray-700 border-[.5px] border-gray-700 transition ease-in-out rounded-full px-10 py-3 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover"
+        className="w-max flex items-center justify-center gap-2 cursor-pointer text-gray-700 border-[.5px] border-gray-700 transition ease-in-out rounded-full px-10 py-3 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover"
       >
         {showMore ? "Show less" : "Show more"}
         <Image
@@ -92,7 +91,7 @@ function Work({ isDarkMode }) {
             isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold
           }
           alt="right-arrow"
-          className="w-4"
+          className={!showMore ? "rotate-0 w-4" : "rotate-90 w-4"}
         />
       </motion.p>
     </motion.div>
